@@ -2,15 +2,15 @@
 import React from "react";
 import axios from "axios";
 import { FaUserCircle, FaLock, FaPowerOff } from 'react-icons/fa';
-import Button from '@material-ui/core/Button';
-import ClickAwayListener from '@material-ui/core/ClickAwayListener';
-import Grow from '@material-ui/core/Grow';
-import Paper from '@material-ui/core/Paper';
-import Popper from '@material-ui/core/Popper';
-import MenuItem from '@material-ui/core/MenuItem';
-import MenuList from '@material-ui/core/MenuList';
+import { Button } from '@mui/material';
+import { ClickAwayListener } from '@mui/material';
+import { Grow } from '@mui/material';
+import { Paper } from '@mui/material';
+import { Popper } from '@mui/material';
+import { MenuItem } from '@mui/material';
+import { MenuList } from '@mui/material';
 import Modal from "../views/Modal";
-import Alert from "@material-ui/lab/Alert";
+import { Alert } from '@mui/lab';
 
 
 const TopNavbar = () => {

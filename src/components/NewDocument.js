@@ -9,7 +9,7 @@ import {
   FaTrashAlt,
   FaArrowLeft,
 } from "react-icons/fa";
-import Alert from "@material-ui/lab/Alert";
+import { Alert } from '@mui/lab';
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 

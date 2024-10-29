@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import TextEditorRead from "./TextEditorRead";
 import axios from "axios";
 import { FaFileAlt, FaBookOpen, FaArrowLeft } from 'react-icons/fa';
-import Alert from '@material-ui/lab/Alert';
+import { Alert } from '@mui/lab';
 
 
 

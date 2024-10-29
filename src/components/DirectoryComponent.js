@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaFolder, FaEllipsisV, FaRegCopy, FaArrowsAlt, FaTrash } from 'react-icons/fa';
-import Button from '@material-ui/core/Button';
-import ClickAwayListener from '@material-ui/core/ClickAwayListener';
-import Grow from '@material-ui/core/Grow';
-import Paper from '@material-ui/core/Paper';
-import Popper from '@material-ui/core/Popper';
-import MenuItem from '@material-ui/core/MenuItem';
-import MenuList from '@material-ui/core/MenuList';
+import { Button } from '@mui/material';
+import { ClickAwayListener } from '@mui/material';
+import { Grow } from '@mui/material';
+import { Paper } from '@mui/material';
+import { Popper } from '@mui/material';
+import { MenuItem } from '@mui/material';
+import { MenuList } from '@mui/material';
 import axios from "axios";
 import { useParams } from 'react-router-dom';
 
