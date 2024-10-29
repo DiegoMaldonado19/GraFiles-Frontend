@@ -4,7 +4,6 @@ import CreateFile from "./CreateFile";
 import CreateDirectory from "./CreateDirectory";
 import Modal from "../views/Modal";
 import NewUSer from "./NewUser";
-import logo from "../assets/2.png";
 import { FaFileAlt, FaTrash, FaFolder, FaUserFriends, FaUserPlus } from 'react-icons/fa';
 
 
@@ -109,7 +108,6 @@ const handleGoToMain = () => {
 
       {/*CREATE DOCUMENT */}
       <div className="bg-blue-100n grid place-content-center p-4 cursor-pointer">
-        <img src={logo} alt="Imagen de fondo" width={80} height={80}  onClick={handleGoToMain}/>
       </div>
 
       {/*CREATE DOCUMENT */}
