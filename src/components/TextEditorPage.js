@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import TextEditor from "./TextEditor";
 import axios from "axios";
 import { FaFileAlt, FaSave, FaShareAlt, FaTrashAlt, FaArrowLeft } from 'react-icons/fa';
@@ -12,6 +12,7 @@ function TextEditorPage() {
   const [content, setContent] = useState("");
   const [isSaving, setIsSaving] = useState(false);
   const [isAlertVisible, setAlertVisible] = useState(false);
+  const navigate = useNavigate();
 
 
   useEffect(() => {
@@ -47,7 +48,15 @@ function TextEditorPage() {
   };
 
   const handleGoBack = () => {
-    window.history.back();
+    const userRole = localStorage.getItem("userRole");
+
+    if (userRole === "Administrador") {
+      navigate("/Admin");
+    } else if (userRole === "Empleado") {
+      navigate("/Empleado");
+    } else {
+      navigate(-1); // Retrocede a la página anterior
+    }
   };
 
   const handleDelete = async () => {
