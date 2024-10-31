@@ -18,9 +18,7 @@ const FileList = () => {
   useEffect(() => {
     const directoryroot = localStorage.getItem("directoryId");
 
-    const apiEndpoint = directoryId
-      ? `http://localhost:4000/api/files/directory/${directoryId}`
-      : `http://localhost:4000/api/files/directory/${directoryroot}`;
+    const apiEndpoint = `http://localhost:4000/api/files/directory/${directoryroot}`;
 
     axios
       .get(apiEndpoint)
@@ -35,7 +33,7 @@ const FileList = () => {
 
     // También obtenemos los directorios aquí
     axios
-      .get(`http://localhost:4000/api/directories/subdirectories/${userId}/${directoryId}`)
+      .get(`http://localhost:4000/api/directories/subdirectories/${userId}/${directoryroot}`)
       .then((response) => {
         setDirectories(response.data);
       })

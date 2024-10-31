@@ -165,17 +165,6 @@ const handleGoToMain = () => {
         <p className="pl-2"> Compartidos</p>
       </div>
 
-      {/*CREATE PAPER BIN */}
-      {userRole === 'Administrador' && (
-        <div
-          className="h-[25px] w-full cursor-pointer hover:bg-gray-300 rounded-xl mx-2 flex items-center p-4"
-          onClick={handlePaperBin}
-        >
-          <FaTrash className="text-gray-600" />
-          <p className="pl-2"> Papelera</p>
-        </div>
-      )}
-
     </div>
   );
 }

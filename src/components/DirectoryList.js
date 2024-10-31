@@ -18,9 +18,7 @@ const DirectoryList = () => {
 
 
     // Si no hay directoryId, realiza una solicitud para obtener los directorios del directorio raíz
-    const apiEndpoint = directoryId
-      ? `http://localhost:4000/api/directories/subdirectories/${userId}/${directoryId}`
-      : `http://localhost:4000/api/directories/subdirectories/${userId}/${directoryroot}`;
+    const apiEndpoint = `http://localhost:4000/api/directories/subdirectories/${userId}/${directoryroot}`;
 
     axios
       .get(apiEndpoint)
